@@ -35,11 +35,7 @@ config配置部分
 声音驱动比较简单,根据自己的声卡芯片型号查看ID，
 layout-id 03000000
 
-4.核显驱动 使用HD630仿冒ID,设置显存为2048M
-AAPL,ig-platform-id 07009B3E
-device-id 9B3E0000
-framebuffer-patch-enable  01000000
-framebuffer-unifiedmem  00000080
+4.核显驱动 使用HD630仿冒ID,设置显存为2048M,接口定制
 ​
 5.usb驱动
 
