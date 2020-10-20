@@ -33,11 +33,13 @@ config配置部分
 3.声卡驱动
 
 声音驱动比较简单,根据自己的声卡芯片型号查看ID，
+layout-id 03000000
 
-4.核显驱动
-
-核显驱动比声卡麻烦一些，懒的折腾就直接从GITHBU上把别人的显卡ID部分复制下来粘贴到自己的CONFIG配置文件中就行了,
-
+4.核显驱动 使用HD630仿冒ID,设置显存为2048M
+AAPL,ig-platform-id 07009B3E
+device-id 9B3E0000
+framebuffer-patch-enable  01000000
+framebuffer-unifiedmem  00000080
 ​
 5.usb驱动
 
